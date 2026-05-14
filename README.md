@@ -1,4 +1,4 @@
-[Screencast from 2026-05-14 14-14-46.webm](https://github.com/user-attachments/assets/f23c1944-9752-45a5-8942-132f21bd56b5)# 2-DOF Planar Manipulator — Dynamics & Control
+# 2-DOF Planar Manipulator — Dynamics & Control
 
 MuJoCo simulation of a 2-DOF revolute-revolute manipulator. Dynamics are computed analytically in Python using the **Uicker–Kahn Lagrangian formulation**, and control is implemented as **Computed Torque Control (CTC)**.
 
