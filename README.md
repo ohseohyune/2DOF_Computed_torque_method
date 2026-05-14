@@ -418,7 +418,7 @@ Overshoot:
 ```
 
 ---
-**[ 정확한 모델 파라미터가 중요한 이유 ]**
+**[ Why Accurate Model Parameters Matter ]**
 
 
 [Screencast from 2026-05-14 14-13-07.webm](https://github.com/user-attachments/assets/1a46725b-4896-49cc-9f68-20c128ff1d0a)
@@ -430,6 +430,11 @@ Overshoot:
 [Screencast from 2026-05-14 14-14-46.webm](https://github.com/user-attachments/assets/dbcd0c8b-3af1-4562-8c9b-26ff9fe70375)
 
 <img width="377" height="174" alt="image" src="https://github.com/user-attachments/assets/7a025c22-cf68-4d7a-bdeb-2cd61ed83171" />
+**It behaves as if it is striking something........**
+
+[Screencast from 2026-05-14 14-17-54.webm](https://github.com/user-attachments/assets/072feed5-b95a-4960-8488-a060c6be9e59)
+
+<img width="400" height="163" alt="image" src="https://github.com/user-attachments/assets/47032acb-fa3e-4756-b2ce-1cb502b28b0d" />
 
 ## 10. Implementation Notes
 
