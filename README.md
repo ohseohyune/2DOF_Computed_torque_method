@@ -63,7 +63,7 @@ Each link's transform is a **rotation about Y** followed by a **translation alon
             ⎡  cos(q)   0   sin(q)   L·cos(q) ⎤
 T_y(q, L) = ⎢    0      1     0        0      ⎥
             ⎢ -sin(q)   0   cos(q)  -L·sin(q) ⎥
-            ⎣    0      0     0        1       ⎦
+            ⎣    0      0     0        1      ⎦
 ```
 
 This is equivalent to:
@@ -113,7 +113,7 @@ For a joint rotating about axis **ω̂**, the general Q is:
 ```
         ⎡  [ω̂]×   0 ⎤
 Q_ω =   ⎢           ⎥
-        ⎣   0ᵀ     0 ⎦
+        ⎣   0ᵀ    0 ⎦
 ```
 
 where `[ω̂]×` is the skew-symmetric matrix of ω̂. For Y-axis: `[ê_y]× = [[0,0,1],[0,0,0],[-1,0,0]]`.
@@ -179,8 +179,8 @@ where m1 = min(j,k), m2 = max(j,k) (since partial derivatives commute).
 The **pseudo-inertia matrix** Jᵢ is a 4×4 symmetric matrix encoding the rigid body inertia of link i:
 
 ```
-     ⎡ (Iyy+Izz-Ixx)/2    -Ixy          -Ixz        m·cx ⎤
-     ⎢     -Ixy       (Ixx+Izz-Iyy)/2  -Iyz        m·cy ⎥
+     ⎡ (Iyy+Izz-Ixx)/2    -Ixy           -Ixz        m·cx ⎤
+     ⎢     -Ixy       (Ixx+Izz-Iyy)/2    -Iyz        m·cy ⎥
 Jᵢ = ⎢     -Ixz           -Iyz      (Ixx+Iyy-Izz)/2  m·cz ⎥
      ⎣    m·cx            m·cy           m·cz          m  ⎦
 ```
