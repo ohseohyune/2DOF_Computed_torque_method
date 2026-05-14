@@ -60,10 +60,10 @@ q̈_ref(t) = [0, -(π/4)·cos(t)]ᵀ
 Each link's transform is a **rotation about Y** followed by a **translation along the rotated X-axis** (standard DH convention for a revolute joint):
 
 ```
-        ⎡  cos(q)   0   sin(q)   L·cos(q) ⎤
+            ⎡  cos(q)   0   sin(q)   L·cos(q) ⎤
 T_y(q, L) = ⎢    0      1     0        0      ⎥
-        ⎢ -sin(q)   0   cos(q)  -L·sin(q) ⎥
-        ⎣    0      0     0        1       ⎦
+            ⎢ -sin(q)   0   cos(q)  -L·sin(q) ⎥
+            ⎣    0      0     0        1       ⎦
 ```
 
 This is equivalent to:
@@ -112,7 +112,7 @@ For a joint rotating about axis **ω̂**, the general Q is:
 
 ```
         ⎡  [ω̂]×   0 ⎤
-Q_ω =  ⎢           ⎥
+Q_ω =   ⎢           ⎥
         ⎣   0ᵀ     0 ⎦
 ```
 
@@ -141,9 +141,9 @@ T_{0→i} = T₁ · T₂ · ... · Tᵢ
 Since `Tⱼ = T_{0→j-1}⁻¹ · T_{0→j}` and using `T_{j-1→i} = T_{0→j-1}⁻¹ · T_{0→i}`:
 
 ```
-         ⎧ T_{0→j-1} · Q · T_{0→j-1}⁻¹ · T_{0→i}    if j ≤ i
+          ⎧ T_{0→j-1} · Q · T_{0→j-1}⁻¹ · T_{0→i}    if j ≤ i
 U_{j,i} = ⎨
-         ⎩ 0                                          if j > i
+          ⎩ 0                                          if j > i
 ```
 
 This is exactly what `get_U(T, Q, j, i)` computes:
@@ -281,7 +281,7 @@ Expanded for the 2-DOF case:
 
 ```
 ⎡ D₁₁  D₁₂ ⎤ ⎡ q̈₁ ⎤   ⎡ H₁ ⎤   ⎡ G₁ ⎤   ⎡ τ₁ ⎤
-⎢           ⎥ ⎢    ⎥ + ⎢    ⎥ + ⎢    ⎥ = ⎢    ⎥
+⎢          ⎥ ⎢    ⎥ + ⎢    ⎥ + ⎢    ⎥ = ⎢    ⎥
 ⎣ D₂₁  D₂₂ ⎦ ⎣ q̈₂ ⎦   ⎣ H₂ ⎦   ⎣ G₂ ⎦   ⎣ τ₂ ⎦
 ```
 
